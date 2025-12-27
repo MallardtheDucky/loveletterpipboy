@@ -223,8 +223,8 @@
         }
         .sub-nav::-webkit-scrollbar { display: none; }
 
-        .sub-item { padding: 2px 8px; white-space: nowrap; }
-        .sub-item.active { background: var(--pip-green); color: #000; text-shadow: none; font-weight: bold; }
+        .sub-item { padding: 2px 8px; white-space: nowrap; font-weight: bold; border: 1px solid transparent; }
+        .sub-item.active { background: var(--pip-green); color: #000; text-shadow: none; border: 1px solid var(--pip-green); }
 
         .display-area {
             flex-grow: 1;
@@ -355,8 +355,13 @@
                         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGI4YmRjNjM1OTIyZDM0YzZkZjg3MmQ5ZDRlNjYwMmE3YjVlMTM0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WvHWU6mpxS0lRCOK35/giphy.gif" class="vault-boy" alt="Vault Boy">
                         
                         <div class="letter-wrap">
-                            <div class="paragraph" style="color: #fff; text-decoration: underline; font-weight: bold;">
-                                [ENTRY DECRYPTED: SEBASTIAN]
+                            <!-- High priority header -->
+                            <div class="paragraph" style="background: var(--pip-green); color: #000; text-align: center; font-weight: 900; font-size: 1.6rem; padding: 4px; margin-bottom: 1.5rem; text-shadow: none;">
+                                [ ALERT: ENCRYPTED DATA RECOVERED ]
+                            </div>
+                            
+                            <div class="paragraph" style="color: #fff; text-decoration: underline; font-weight: bold; font-size: 1.5rem; margin-bottom: 1rem; border-left: 4px solid var(--pip-green); padding-left: 10px;">
+                                SUBJECT: SEBASTIAN
                             </div>
 
                             <div class="paragraph">
